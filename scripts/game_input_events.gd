@@ -24,6 +24,5 @@ static func is_movement_input() -> bool:
 
 static func use_tool(viewport: Viewport) -> bool:
 	var use_tool_value: bool = Input.is_action_just_pressed("hit")
-	if use_tool_value:
-		print("viewport: " + str(viewport.to_string()))
+	
 	return use_tool_value

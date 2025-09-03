@@ -24,13 +24,13 @@ func _unhandled_input(_event: InputEvent) -> void:
 	if GameInputEvents.is_movement_input():
 		transition.emit("Walk")
 		
-	if player.current_tool == DataTypes.Tools.AxeWood && GameInputEvents.use_tool(get_viewport()):
+	if player.current_tool == DataTypes.Tools.AxeWood and GameInputEvents.use_tool(get_viewport()):
 		transition.emit("Chopping")
 		
-	if player.current_tool == DataTypes.Tools.TillGround && GameInputEvents.use_tool(get_viewport()):
+	if player.current_tool == DataTypes.Tools.TillGround and GameInputEvents.use_tool(get_viewport()):
 		transition.emit("Tilling")
 		
-	if player.current_tool == DataTypes.Tools.WaterCrops && GameInputEvents.use_tool(get_viewport()):
+	if player.current_tool == DataTypes.Tools.WaterCrops and GameInputEvents.use_tool(get_viewport()):
 		transition.emit("Watering")
 
 func _on_enter() -> void:

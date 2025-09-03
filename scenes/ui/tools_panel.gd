@@ -44,7 +44,7 @@ func _on_tool_tomato_pressed() -> void:
 
 func _unhandled_input(event: InputEvent) -> void:
 	#print("_unhandled_input: " + str(event.as_text()))
-	if event.is_action_pressed("release_tool") && !event.is_action_pressed("remove_dirt"):
+	if event.is_action_pressed("release_tool") and !event.is_action_pressed("remove_dirt"):
 		ToolManager.select_tool(DataTypes.Tools.None)
 		tool_axe.release_focus()
 		tool_tilling.release_focus()

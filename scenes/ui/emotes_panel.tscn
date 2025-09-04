@@ -194,9 +194,10 @@ grow_vertical = 2
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Emote"]
 position = Vector2(20, 22)
 sprite_frames = SubResource("SpriteFrames_u07v1")
-animation = &"emote_1_idle"
+animation = &"emote_7_excited"
 autoplay = "emote_1_idle"
-frame_progress = 0.389183
+frame = 1
+frame_progress = 0.0421143
 
 [node name="EmoteIdleTimer" type="Timer" parent="."]
 wait_time = 5.0

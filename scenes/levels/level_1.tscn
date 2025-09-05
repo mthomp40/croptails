@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=4 uid="uid://bxakjhyliox53"]
+[gd_scene load_steps=17 format=4 uid="uid://bxakjhyliox53"]
 
 [ext_resource type="TileSet" uid="uid://crkdcolgh1ldo" path="res://tilesets/game_tile_set.tres" id="1_ksju7"]
 [ext_resource type="PackedScene" uid="uid://gudf043t0dj8" path="res://scenes/houses/large_house.tscn" id="2_6iamk"]
@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://bbvjvox7gimm2" path="res://scenes/objects/egg.tscn" id="10_excbq"]
 [ext_resource type="PackedScene" uid="uid://c0l23kfhmtxpk" path="res://scenes/objects/chest/chest.tscn" id="11_dnkej"]
 [ext_resource type="PackedScene" uid="uid://bq5sldw74nkq4" path="res://scenes/components/save_level_data_component.tscn" id="11_excbq"]
+[ext_resource type="PackedScene" uid="uid://c4qn0kutwdq7i" path="res://audio/music/on_the_farm_music.tscn" id="14_mm8aj"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_x42e6"]
 vertices = PackedVector2Array(483.227, 193, 351.641, 344.609, 183.352, 296, 145.977, 140.773, 145.094, 46.7266, 493.312, 37.2891)
@@ -26,6 +27,8 @@ outlines = Array[PackedVector2Array]([PackedVector2Array(305, 76, 495, 78, 497, 
 
 [node name="Level1" type="Node2D"]
 y_sort_enabled = true
+
+[node name="OnTheFarmMusic" parent="." instance=ExtResource("14_mm8aj")]
 
 [node name="SaveLevelDataComponent" parent="." instance=ExtResource("11_excbq")]
 
